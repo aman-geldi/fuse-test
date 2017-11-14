@@ -1,0 +1,15 @@
+<StackPanel ux:Class="StatusAndAppBar" Color="#FAFAFA">
+	<StatusBarBackground />
+	<StackPanel >
+		<Panel Height="40">
+			<Rectangle Height="40" Margin="20">
+				<Text Alignment="Center" Color="#000000" FontSize="20" Margin="10,0,0,0" Font="Regular">
+			Life.ai
+				</Text>
+				<Panel Alignment="Left" HitTestMode="LocalBounds" Width="56" Height="56" Clicked="{addItem}">
+					<PlusButton Alignment="Left"/>
+				</Panel>
+			</Rectangle>
+			</Panel>
+	</StackPanel>
+</StackPanel>

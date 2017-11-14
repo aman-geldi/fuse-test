@@ -1,0 +1,10 @@
+<App Background="#FAFAFA">
+		<iOS.StatusBarConfig Style="Light" />
+	<ClientPanel>
+	<DockPanel>
+		<StatusAndAppBar ux:Name="statusAndAppBar" Dock="Top" />
+		<Films/>
+ 		<BottomBar ux:Name="bottomBar" Dock="Bottom"/>
+	</DockPanel>
+</ClientPanel>
+</App>

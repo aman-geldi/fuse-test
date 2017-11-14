@@ -1,0 +1,65 @@
+<ScrollView ux:Class="Films">
+	<JavaScript File="Films.js"/>
+	<JavaScript>
+		var Observable = require("FuseJS/Observable");
+        var staticRating = Observable(4);
+
+        staticRating.onValueChanged(module, function(x) {
+            console.log("staticRating changed to: " + x);
+        });
+        module.exports = {
+            staticRating: staticRating,
+        };
+    </JavaScript>
+
+<StackPanel  Margin="0,14,0,10">
+	<SwipeGesture ux:Name="swipe" Direction="Down" Type="Active"/>
+					<SwipingAnimation Source="swipe">
+    					<Move  Y="0.9" RelativeTo="Size" Duration="0.1" />
+   				</SwipingAnimation>
+	<Shadow Size="30"  Color="#0001"  />
+		<Rectangle CornerRadius="15" Layer="Background">
+			<Shadow Size="10" Distance="10" Color="#0001" />
+			<LinearGradient StartPoint="0,1" EndPoint="1,0">
+				<GradientStop Offset="0" Color="#FFFFFF" />
+				<GradientStop Offset="1" Color="#FFFFFF" />
+			</LinearGradient>
+		</Rectangle>
+
+
+	<Panel ux:Class="VerticalBar" Margin="8,0,8,2" Alignment="VerticalCenter"/>
+	
+	<Text ux:Class="SubText" Alignment="VerticalCenter" />
+	<Text ux:Class="Name" FontSize="15" Font="Bold"/>
+
+
+	<DockPanel Margin="10,0,0,15">
+		<Rectangle Alignment="TopCenter" Height="6" Width="50" Color="#DCDCDC" CornerRadius="7" Margin="10" />
+		<ShareButton ux:Name="shareButton" Alignment="TopRight" />
+
+		<DockPanel Margin="10,4,10,0">
+			<StackPanel Dock="Top" Orientation="Horizontal">
+				<Name Value="" />
+			</StackPanel>
+			<StackPanel Dock="Bottom" Orientation="Vertical">
+				<SubText Value="" />
+				<VerticalBar />
+				<SubText Value="{title}" FontSize="24" Font="Regular"/>
+				<VerticalBar />
+				<SubText Value="{pg}" FontSize="24" Font="Light" />
+				<StaticRatingComponent Stars="5" Rating="{staticRating}" >
+					<Text Value="{rating}" Alignment="BottomCenter" FontSize="15" Font="Regular"/>
+				</StaticRatingComponent>
+				<Panel Margin="6"/>
+				<Image File="Assets/images/man.jpg" Width="120" Alignment="Left"/>
+				<BuyButton Alignment="Left"/>
+				<Text Value="{body}" TextWrapping="Wrap" Font="Regular" FontSize="15" />
+			</StackPanel>
+
+		</DockPanel>
+	</DockPanel>
+
+</StackPanel>
+
+
+</ScrollView>

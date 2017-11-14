@@ -1,0 +1,24 @@
+<StackPanel ux:Class="BottomBar">
+	<StackPanel>
+		<Panel Height="60">
+      <Shadow Size="30" Color="#0001"  />
+      <Rectangle >
+            	<CircleButton Alignment="Left"/>
+            		<Panel Alignment="Center">
+            			<Rectangle >
+            				<Text Value="Type a message" Alignment="CenterLeft" Font="Regular"/>
+            			</Rectangle>
+            		</Panel>
+            	<UpButton Alignment="Right"/>
+        </Rectangle>
+        <Rectangle  Height="4" Alignment="Bottom">
+    		<LinearGradient AngleDegrees="180">
+       			 <GradientStop Offset="0.3" Color="#37d5ae"  />
+       			 <GradientStop Offset="0.6" Color=" #7070ef" />
+       			 <GradientStop Offset="1" Color="#4699f0" />
+   			 </LinearGradient>
+		</Rectangle>
+  </Panel>
+	</StackPanel>
+</StackPanel>
+				

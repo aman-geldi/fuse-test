@@ -1,0 +1,4 @@
+<Panel ux:Class="PlusButton" Width="36" Height="36">
+	<Rectangle Color="#1E90FF" Width="2" Height="15" />
+	<Rectangle Color="#1E90FF" Width="15" Height="2" />
+</Panel>

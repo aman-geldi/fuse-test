@@ -1,0 +1,7 @@
+<Panel ux:Class="UpButton" >
+	<Image Width="25" Height="25" StretchMode="Uniform" Margin="16">
+		<MultiDensityImageSource>
+			<FileImageSource File="../Assets/icons/up.png"/>
+		</MultiDensityImageSource>
+	</Image>
+</Panel>
