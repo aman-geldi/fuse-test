@@ -1,7 +1,3 @@
-<Panel ux:Class="CircleButton" >
-	<Image Width="35" Height="35" StretchMode="Uniform" Margin="16">
-		<MultiDensityImageSource>
-			<FileImageSource File="../Assets/icons/circle.png"/>
-		</MultiDensityImageSource>
-	</Image>
-</Panel>
+<Button ux:Class="CircleButton" >
+	<Image Width="35" Height="35" StretchMode="Uniform" Margin="16" File="../Assets/icons/circle.png"/>
+</Button>

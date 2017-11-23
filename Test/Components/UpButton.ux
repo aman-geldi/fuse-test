@@ -1,7 +1,6 @@
-<Panel ux:Class="UpButton" >
-	<Image Width="25" Height="25" StretchMode="Uniform" Margin="16">
-		<MultiDensityImageSource>
-			<FileImageSource File="../Assets/icons/up.png"/>
-		</MultiDensityImageSource>
-	</Image>
-</Panel>
+<Button Margin="10" ux:Class="UpButton" >
+	<Text ux:Class="fa-chevron-circle-up" Value="&#xf139;" Font="fa" />
+	<Panel Width="25" Height="25">
+	<fa-chevron-circle-up FontSize="20" Color="#1E90FF"/>
+	</Panel>
+</Button>

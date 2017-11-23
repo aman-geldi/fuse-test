@@ -1,24 +1,16 @@
-<StackPanel ux:Class="BottomBar">
-	<StackPanel>
-		<Panel Height="60">
-      <Shadow Size="30" Color="#0001"  />
-      <Rectangle >
+    <DockPanel ux:Class="BottomBar" Height="50">
+        <Grid ColumnCount="3">
             	<CircleButton Alignment="Left"/>
-            		<Panel Alignment="Center">
-            			<Rectangle >
-            				<Text Value="Type a message" Alignment="CenterLeft" Font="Regular"/>
-            			</Rectangle>
-            		</Panel>
+            	<TextInput Width="220"  Value="" PlaceholderText="Type a message..." PlaceholderColor="#A9A9A9" FontSize="15" Alignment="Center" ActionStyle="Send" ActionTriggered="{UpButton}" Font="Regular"/>
             	<UpButton Alignment="Right"/>
-        </Rectangle>
-        <Rectangle  Height="4" Alignment="Bottom">
-    		<LinearGradient AngleDegrees="180">
-       			 <GradientStop Offset="0.3" Color="#37d5ae"  />
-       			 <GradientStop Offset="0.6" Color=" #7070ef" />
-       			 <GradientStop Offset="1" Color="#4699f0" />
-   			 </LinearGradient>
-		</Rectangle>
-  </Panel>
-	</StackPanel>
-</StackPanel>
+        </Grid>
+
+        <Rectangle  Height="6" Alignment="Bottom">
+      		<LinearGradient AngleDegrees="180">
+         			 <GradientStop Offset="0.3" Color="#37d5ae"  />
+         			 <GradientStop Offset="0.6" Color=" #7070ef" />
+         			 <GradientStop Offset="1" Color="#4699f0" />
+     			 </LinearGradient>
+		    </Rectangle>
+    </DockPanel>
 				

@@ -11,12 +11,13 @@
             staticRating: staticRating,
         };
     </JavaScript>
+    
 
 <StackPanel  Margin="0,14,0,10">
 	<SwipeGesture ux:Name="swipe" Direction="Down" Type="Active"/>
 					<SwipingAnimation Source="swipe">
     					<Move  Y="0.9" RelativeTo="Size" Duration="0.1" />
-   				</SwipingAnimation>
+   					</SwipingAnimation>
 	<Shadow Size="30"  Color="#0001"  />
 		<Rectangle CornerRadius="15" Layer="Background">
 			<Shadow Size="10" Distance="10" Color="#0001" />
@@ -35,7 +36,7 @@
 
 	<DockPanel Margin="10,0,0,15">
 		<Rectangle Alignment="TopCenter" Height="6" Width="50" Color="#DCDCDC" CornerRadius="7" Margin="10" />
-		<ShareButton ux:Name="shareButton" Alignment="TopRight" />
+		<ShareButton  Alignment="TopRight" />
 
 		<DockPanel Margin="10,4,10,0">
 			<StackPanel Dock="Top" Orientation="Horizontal">
@@ -52,8 +53,8 @@
 				</StaticRatingComponent>
 				<Panel Margin="6"/>
 				<Image File="Assets/images/man.jpg" Width="120" Alignment="Left"/>
-				<BuyButton Alignment="Left"/>
-				<Text Value="{body}" TextWrapping="Wrap" Font="Regular" FontSize="15" />
+				<BuyButton Margin="0,10,0,20" Alignment="Left"/>
+				<Text Value="{body}" TextWrapping="Wrap" Font="Regular" FontSize="14" LineSpacing="7"/>
 			</StackPanel>
 
 		</DockPanel>

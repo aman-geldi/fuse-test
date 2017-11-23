@@ -1,7 +1,4 @@
-<Panel ux:Class="ShareButton" >
-	<Image Width="40" Height="40" StretchMode="Uniform" Margin="16">
-		<MultiDensityImageSource>
-			<FileImageSource File="../Assets/icons/share.png"/>
-		</MultiDensityImageSource>
-	</Image>
-</Panel>
+<Button Margin="18" ux:Class="ShareButton" >
+	 <Text ux:Class="fa-share" Value="&#xf064;" Font="fa" />
+		<fa-share Color="#1E90FF"/>
+</Button>

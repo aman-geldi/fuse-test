@@ -1,5 +1,6 @@
 <Panel ux:Class="StaticResources">
 	<Font ux:Global="Light" File="Assets/Fonts/SF-Pro-Display-Light.otf" />
 	<Font ux:Global="Regular" File="Assets/Fonts/SF-Pro-Text-Regular.otf" />
-	<Font ux:Global="Semibold" File="Assets/Fonts/SF-Pro-Text-Semibold.otf" />	
+	<Font ux:Global="Semibold" File="Assets/Fonts/SF-Pro-Text-Semibold.otf" />
+	<Font ux:Global="fa" File="Assets/Fonts/FontAwesome.otf" />
 </Panel>
